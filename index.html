@@ -24,7 +24,7 @@
                         <span class="material-symbols-outlined">
                             mail
                             </span>
-                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail">
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
                         <label for="ilogin">Login</label>
                     </div>
 
@@ -32,9 +32,13 @@
                         <span class="material-symbols-outlined">
                             lock
                             </span>
-                        <input type="password" name="senha" id="isenha" placeholder="Sua senha">
-                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label> 
                     </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha <i class="material-icons">mail</i>
+                    </a>
                 </form>
             </div>
         </section>
